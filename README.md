@@ -1,1 +1,0 @@
-# ahaurylchyk.github.io

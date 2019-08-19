@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" type="text/css" href="css/style_print.css">
+    <link rel="stylesheet" href="css/wowanimate.css">
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <style>.dvd { overflow: hidden;}</style>
+    <script>cookieChoices = {};</script>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <title>3D-печать в Минске</title>
+
+
+
+</head>
+
+<body>
+    <!-- МЕНЮ В ШАПКЕ САЙТА -->
+    <div id="header">
+        <div class="header__ad">
+            <p>3D-печать в г. Минске от BY3D!</p>
+            <a href="http://vk.com/3dprint_by3d"><img src="images/print/vk.png" alt="vk"></a>
+            <p class="header__phone"> +375(33)332-56-03</p>
+        </div>
+        <div class="header__menu">
+            <nav>
+                <a href="services.html">Назад</a>
+                <a class="header-item" href="index.html#nav-service">Стоимость</a>
+                <a class="header-item" href="index.html#nav-advantages">Преимущества</a>
+                <a class="header-item" href="index.html#nav-gallery">Галерея</a>
+            </nav>
+        </div>
+    </div>
+    <!-- ПРИВЕТСТВИЕ -->
+    <div id="nav-intro" class="parallax-window" data-parallax="scroll" data-image-src="images/print/fon8.jpg">
+        <div class="nav-intro__tittle">
+            <div class="item wow bounceInUp" data-wow-duration="3.0s">
+                <h2>Вам нужна 3D-печать? </h2>
+            </div>
+            <div class="item wow bounceInUp" data-wow-duration="3.0s">
+                <h3>Мы к Вашим услугам!</h3>
+            </div>
+            <div class="nav-intro__contacts item wow fadeIn" data-wow-duration="2.4s" data-wow-delay="2.0s">
+                <p>+375 33 3325603 &nbsp;noet@tut.by</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- УСЛУГИ -->
+    <div id="nav-service">
+        <div class="nav-service__background">
+            <div class="nav-service__title item wow fadeIn" data-wow-duration="3.0s">
+                <h2> Как выполняется услуга 3D-печати:</h2>
+            </div><br><br>
+            <div>
+                <div class="nav-service__block item wow fadeInDown" data-wow-duration="1.4s">
+                    <img src="images/print/s1.jpg">
+                    <p><b> Отправляеете нам <br>3D-модель изделия</b></p>
+                </div>
+                <div class="nav-service__block item wow fadeInDown" data-wow-duration="2.2s">
+                    <img src="images/print/s5.jpg">
+                    <p><b> Определяем материал <br>и стоимость услуги </b></p>
+                </div>
+                <div class="nav-service__block item wow fadeInDown" data-wow-duration="3.0s">
+                    <img src="images/print/s6.jpg">
+                    <p><b> Печатаем изделие<br> в кратчайшие сроки </b></p>
+                </div>
+                <div class="nav-service__block item wow fadeInDown" data-wow-duration="3.8s">
+                    <img src="images/print/s4.jpg">
+                    <p><b> Оплачиваете услугу <br>и забираете изделие </b></p>
+                </div>
+            </div>
+
+            <div id="nav-service__cost">
+                <div class="nav-service__cost-block item wow fadeInDown" data-wow-duration="2.0s">
+                    <h2 id="nav-service__calc"> Отправить файл 3D-модели:</h2>
+                    <form>
+                        <input type="file"><br><br>
+                        <INPUT type="button" value="Отправить" onClick="btnClick2()"></INPUT>
+                    </form>
+                </div>
+
+                <div class="nav-service__cost-block item wow fadeInDown" data-wow-duration="3.0s">
+                    <h2>Расчет стоимости 3D-печати:</h2>
+                    <FORM NAME="costPrint">
+                        <table class="nav-service__cost-materials">
+                            <tr>
+                                <td>
+                                    <p> Материал<br>изделия: </p>
+                                    <SELECT NAME="Filament">
+                                        <OPTION VALUE="ABS" SELECTED>ABS</OPTION>
+                                        <OPTION VALUE="PLA">PLA</OPTION>
+                                        <OPTION VALUE="PETG">PETG</OPTION>
+                                        <OPTION VALUE="FLEX">FLEX</OPTION>
+                                        <OPTION VALUE="NYLON">NYLON</OPTION>
+                                    </SELECT> <br>
+                                </td>
+                                <td>
+                                    <p> Вес<br>(в граммах) : </p>
+                                    <INPUT NAME="mWeight" type="text" size="5"></INPUT><br>
+                                </td>
+                                <td>
+                                    <br><br><INPUT type="button" value="Расчитать" onClick="btnClick2()"></INPUT>
+                                    <br>
+                                    <p id="Out" class="leftP">...</p>
+                                    <p class="leftP">руб.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </FORM>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ПРЕИМУЩЕСТВА -->
+    <div id="nav-advantages" class="parallax-window" data-parallax="scroll" data-image-src="images/print/fon5.jpg">
+        <div class="nav-advantages__content">
+            <div class="item wow fadeIn" data-wow-duration="3.6s">
+                <div>
+                    <h2> РУП "Новые оптоэлектронные технологии":</h2>
+                </div>
+                <div class="nav-advantages__quality">
+                    <ul>
+                        <li>Производственное предприятие<br> (резидент Технопарка БНТУ)</li>
+                        <li>Специалисты с многолетним опытом</li>
+                        <li>Большое количество 3D-принтеров<br> (Cобственное производство 3D-оборудования) </li>
+                        <li>Использование различных видов материалов</li>
+                        <li>Самые доступные цены</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ГАЛЕРЕЯ -->
+
+    <div id="nav-gallery">
+        <div class=" nav-gallery__appearance">
+
+            <div class="nav-gallery__title item wow fadeIn" data-wow-duration="1.0s" >
+                <h2> Примеры напечатанных образцов:</h2>
+            </div>
+
+
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <img class="nav-gallery__image" src="images/print/o.jpg">
+
+                <img class="nav-gallery__image" src="images/print/p.jpg">
+
+                <img class="nav-gallery__image" src="images/print/a.jpg">
+
+                <img class="nav-gallery__image" src="images/print/s.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <img class="nav-gallery__image" src="images/print/j.jpg">
+
+                <img class="nav-gallery__image" src="images/print/k.jpg">
+
+                <img class="nav-gallery__image" src="images/print/l.jpg">
+
+                <img class="nav-gallery__image" src="images/print/z.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <img class="nav-gallery__image" src="images/print/t.jpg">
+
+                <img class="nav-gallery__image" src="images/print/y.jpg">
+
+                <img class="nav-gallery__image" src="images/print/u.jpg">
+
+                <img class="nav-gallery__image" src="images/print/i.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <img class="nav-gallery__image" src="images/print/q.jpg">
+
+
+                <img class="nav-gallery__image" src="images/print/w.jpg">
+
+
+                <img class="nav-gallery__image" src="images/print/e.jpg">
+
+
+                <img class="nav-gallery__image" src="images/print/r.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+               
+                <img class="nav-gallery__image" src="images/print/d.jpg">
+
+                <img class="nav-gallery__image" src="images/print/f.jpg">
+
+                <img class="nav-gallery__image" src="images/print/g.jpg">
+
+                <img class="nav-gallery__image" src="images/print/h.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <img class="nav-gallery__image" src="images/print/x.jpg">
+
+                <img class="nav-gallery__image" src="images/print/c.jpg">
+
+                <img class="nav-gallery__image" src="images/print/v.jpg">
+
+                <img class="nav-gallery__image" src="images/print/b.jpg">
+
+            </div>
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+               
+                <img class="nav-gallery__image" src="images/print/n.jpg">
+
+                <img class="nav-gallery__image" src="images/print/m.jpg">
+
+                <img class="nav-gallery__image" src="images/print/x.jpg">
+
+                <img class="nav-gallery__image" src="images/print/z.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ПОДВАЛ -->
+    <div id="footer">
+        <div class="footer__content">
+            <div class="footer__block">
+                <p><b> 3D-печать<br><br> в Минске!</b></p>
+            </div>
+            <div class="footer__block">
+                <p><b>Адрес:</b></p>
+                <p>г. Минск, Хмельницкого,9, корп.11А, комн. 4
+
+
+            </div>
+            <div class="footer__block">
+
+                <p><b> Контакты:</b> </p>
+                <p> +375 (33) 332-56-03<br>noet@tut.by </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/cost.js"></script>
+
+</body>
+
+</html>
