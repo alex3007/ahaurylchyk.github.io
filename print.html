@@ -24,17 +24,35 @@
     <!--Header menu-->
     <div id="header">
         <div class="header__ad">
-            <p>3D-печать в г. Минске от BY3D!</p>
+            <p class="header__logo" >3D-печать в г. Минске от BY3D!</p>
             <a href="http://vk.com/3dprint_by3d"><img src="images/print/vk.png" alt="vk"></a>
             <p class="header__phone"> +375(33)332-56-03</p>
         </div>
-        <div class="header__menu">
-            <nav>
-                <a href="services.html">Назад</a>
+        <div id="header__menu">
+            
+               
+           <nav>
+                
+                <a class="header-item" href="index.html#nav-intro">Главная</a>
                 <a class="header-item" href="index.html#nav-service">Стоимость</a>
+                <a class="header-item" href="index.html#nav-gallery__appearance">Галерея</a>
                 <a class="header-item" href="index.html#nav-advantages">Преимущества</a>
-                <a class="header-item" href="index.html#nav-gallery">Галерея</a>
+                
             </nav>
+            
+            <div class="header__menu_block">
+               <ul class="visible" >
+                <li><a class="header-item-hidden" href="index.html#nav-intro">Меню</a>
+                <ul class="bar">
+                    <li><a href="index.html#nav-intro">Главная</a></li>
+                    <li><a href="index.html#nav-service">Стоимость</a></li>
+                    <li><a href="index.html#nav-gallery__appearance">Галерея</a></li>
+                    <li><a href="index.html#nav-advantages">Преимущества</a></li>
+                </ul>
+                   </li>
+                </ul>
+            </div>
+            
         </div>
     </div>
     <!-- Greeting -->
@@ -116,6 +134,31 @@
                     </FORM>
                 </div>
             </div>
+            
+            
+            
+             <div id="nav-gallery__appearance">
+
+            <div class="nav-gallery__title item wow fadeIn" data-wow-duration="1.0s">
+                <h2> Примеры напечатанных образцов:</h2>
+            </div>
+
+
+            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
+
+                <div class="nav-gallery__slider">
+                    <img  src="images/print/1.jpg" name="picture" />
+                    <br />
+                </div>
+            </div>
+        </div>
+            
+            
+            
+            
+            
+            
+            
         </div>
     </div>
     <!-- Advantages -->
@@ -135,101 +178,13 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </div>
 
     <!-- Gallery -->
 
-    <div id="nav-gallery">
-        <div class=" nav-gallery__appearance">
-
-            <div class="nav-gallery__title item wow fadeIn" data-wow-duration="1.0s" >
-                <h2> Примеры напечатанных образцов:</h2>
-            </div>
-
-
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-
-                <img class="nav-gallery__image" src="images/print/o.jpg">
-
-                <img class="nav-gallery__image" src="images/print/p.jpg">
-
-                <img class="nav-gallery__image" src="images/print/a.jpg">
-
-                <img class="nav-gallery__image" src="images/print/s.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-
-                <img class="nav-gallery__image" src="images/print/j.jpg">
-
-                <img class="nav-gallery__image" src="images/print/k.jpg">
-
-                <img class="nav-gallery__image" src="images/print/l.jpg">
-
-                <img class="nav-gallery__image" src="images/print/z.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-
-                <img class="nav-gallery__image" src="images/print/t.jpg">
-
-                <img class="nav-gallery__image" src="images/print/y.jpg">
-
-                <img class="nav-gallery__image" src="images/print/u.jpg">
-
-                <img class="nav-gallery__image" src="images/print/i.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-
-                <img class="nav-gallery__image" src="images/print/q.jpg">
-
-
-                <img class="nav-gallery__image" src="images/print/w.jpg">
-
-
-                <img class="nav-gallery__image" src="images/print/e.jpg">
-
-
-                <img class="nav-gallery__image" src="images/print/r.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-               
-                <img class="nav-gallery__image" src="images/print/d.jpg">
-
-                <img class="nav-gallery__image" src="images/print/f.jpg">
-
-                <img class="nav-gallery__image" src="images/print/g.jpg">
-
-                <img class="nav-gallery__image" src="images/print/h.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-
-                <img class="nav-gallery__image" src="images/print/x.jpg">
-
-                <img class="nav-gallery__image" src="images/print/c.jpg">
-
-                <img class="nav-gallery__image" src="images/print/v.jpg">
-
-                <img class="nav-gallery__image" src="images/print/b.jpg">
-
-            </div>
-            <div class="nav-gallery__content item wow fadeIn" data-wow-duration="2s">
-               
-                <img class="nav-gallery__image" src="images/print/n.jpg">
-
-                <img class="nav-gallery__image" src="images/print/m.jpg">
-
-                <img class="nav-gallery__image" src="images/print/x.jpg">
-
-                <img class="nav-gallery__image" src="images/print/z.jpg">
-
-            </div>
-        </div>
-    </div>
+    <div id="nav-gallery"></div>
 
     <!-- Footer -->
     <div id="footer">
@@ -255,6 +210,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/cost.js"></script>
+    <script src="js/printsEffects.js"></script>
 
 </body>
 

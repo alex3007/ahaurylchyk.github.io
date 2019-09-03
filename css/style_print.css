@@ -12,13 +12,7 @@
         display: none;
     }
 
-    div p.header__phone {
-
-        margin-right: 30px;
-        margin-top: 10px;
-    }
-
-
+   
     div.nav-intro__tittle h2 {
         font-size: 28px;
     }
@@ -48,13 +42,24 @@
     div#nav-gallery h2 {
         font-size: 25px;
     }
+
+    div.nav-gallery__slider img {
+
+        max-width: 200px;
+    }
+
+    div#header__menu .header-item-hidden {
+
+        display: block;
+            }
+
 }
 
 
-body {
-    margin: 0px;
-    padding: 0px;
+*{
     
+    margin: 0;
+    padding: 0;
 }
 
 .header__ad {
@@ -67,10 +72,13 @@ p.header__phone {
     float: right;
 }
 
-
+.header__phone{
+     margin-right: 10px;
+        margin-top: 5px;
+}
 
 .header__ad a {
-    margin: 10px 16px 2px;
+    margin: 6px 18px 2px;
 }
 
 .header__ad img {
@@ -78,7 +86,9 @@ p.header__phone {
     width: 32px;
 }
 
-
+.header__logo{
+    margin-top: 5px;
+}
 
 #header {
 
@@ -92,7 +102,7 @@ p.header__phone {
     color: white;
     clear: both;
     font-size: 16px;
-    z-index: 100;
+    z-index: 4;
     top: 0px;
     margin: 1px;
 }
@@ -112,10 +122,11 @@ p.header__phone {
     color: white;
     margin-left: 20px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    font-family:fantasy;
+    font-family: monospace;
     
+
 }
 
 #header a:hover {
@@ -123,15 +134,76 @@ p.header__phone {
     color: skyblue;
 }
 
-#nav-intro{
+
+ .header-item-hidden {
+    
+    height: 20px;
+    padding: 4px;
+    display: none;
+    box-shadow: 0 0 5px; 
+ }
+
+/*----------------------------------------------*/
+
+.header__menu_block{
+    
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
         
 }
+
+#header__menu ul{
+    list-style-type: none;
+                
+}
+
+.visible {
+    position: absolute;
+}
+
+#header__menu_block ul{
+    
+    margin-left: 20px;
+    position: absolute;
+}
+
+
+
+.bar li {
+    
+   
+     background-color: rgba(15, 0, 78, 0.5);
+     width: 140px;
+     height: 20px;
+         
+    
+}
+
+
+
+#header__menu li .bar  {
+    display: none;
+    }
+
+#header__menu li:hover .bar {
+    display: block;
+    z-index: 5;
+      
+}
+
+
+
+
+/*-----------------------------------------------*/
+
+
 
 .nav-intro__tittle {
     background-color: rgba(16, 12, 199, 0.5);
     text-align: center;
     padding-bottom: 310px;
-    
+
 }
 
 .nav-intro__tittle h2 {
@@ -159,7 +231,7 @@ p.header__phone {
 #nav-service {
     text-align: center;
     color: rgba(3, 3, 62, 0.7);
-   padding-top: -25px;
+    padding-top: -25px;
 }
 
 .nav-service__background {
@@ -167,21 +239,23 @@ p.header__phone {
     background: linear-gradient(rgba(9, 13, 186, 0.9), rgba(9, 13, 186, 0.7), rgba(16, 6, 140, 0.9));
     padding-top: 70px;
     padding-bottom: 80px;
-   
+
 }
 
 .nav-service__title {
 
     color: white;
     font-family: monospace;
-    
-    }
+    padding-top: 40px;
 
-.nav-service__title h2{
-    
+}
+
+.nav-service__title h2 {
+
     font-size: 35px;
-        
-    }
+
+}
+
 .nav-service__block {
 
     display: inline-block;
@@ -198,7 +272,7 @@ p.header__phone {
 .nav-service__cost-block {
     display: inline-block;
     margin: 20px 50px;
-    max-width: 400px;
+    max-width: 350px;
     height: 200px;
     vertical-align: top;
     background-color: rgba(255, 255, 255, 0.9);
@@ -259,21 +333,11 @@ p.header__phone {
 
 /*------------------------------------------------------------------*/
 
-#nav-gallery {
 
-    width: auto;
-    text-align: center;
-    background-color: rgba(16, 6, 140, 0.7);
-    background: linear-gradient(rgba(9, 13, 186, 0.9), rgba(9, 13, 186, 0.7), rgba(16, 6, 140, 0.9));
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-}
-
-.nav-gallery__appearance {
+#nav-gallery__appearance {
 
 
-    min-height: 700px;
+    min-height: 600px;
     text-align: center;
     font-family: monospace;
     padding-top: 100px;
@@ -285,30 +349,29 @@ p.header__phone {
     color: white;
     font-size: 35px;
     font-family: monospace;
+
 }
 
 .nav-gallery__title h2 {
-    
+
     font-size: 35px;
-    
+
 }
+
 .nav-gallery__content {
 
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
-.nav-gallery__image {
+.nav-gallery__slider img {
 
-    display: inline-block;
-    margin: 20px 35px;
-    width: 200px;
+
+    margin: 0 auto;
+    max-height: 400px;
+    border-radius: 10px;
+
 }
 
-.nav-gallery__image img {
-
-    width: 200px;
-    vertical-align: middle;
-}
 
 
 /*---------------------------------------------------------------------------*/
