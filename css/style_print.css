@@ -112,8 +112,10 @@ p.header__phone {
     color: white;
     margin-left: 20px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
+    font-family:fantasy;
+    
 }
 
 #header a:hover {
