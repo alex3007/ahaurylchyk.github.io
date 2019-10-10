@@ -1173,33 +1173,33 @@ form #contact {
 /* -----------------------------------------------------------стили кнопок */
 
 
-a.opisanie {
+a.description {
 
     background-color: #0fba09;
     color: white;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px 15px;
     border-radius: 8px;
 
 }
 
-a.opisanie:hover {
+a.description:hover {
     background-color: #eca613;
 
 }
 
-a.opisanie2 {
+a.description2 {
     font-size: 16px;
     background-color: #388EBD;
     color: white;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px 15px;
     border-radius: 8px;
 }
 
-a.opisanie2:hover {
+a.description2:hover {
 
-    background-color: #8ef089;
+    background-color: #0fba09;
 }
 
 a.back {
